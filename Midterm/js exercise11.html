@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="js exercise12.html">Next</a>
+
+<h4>Age</h4>
+
+<form>
+	<input type = "textbox" value = "" id = "age"><br><br>
+    <input type = "button" onclick = "func()" value = "Submit">
+</form>
+
+<h4 id = "demo" />
+
+<script>
+
+function func() {
+	let x = document.getElementById("age").value;
+   	
+    if (x >= 0 && x <= 12) {
+    	document.getElementById("demo").innerHTML = "Child";
+    }
+    
+    else if (x >= 13 && x <= 19) {
+    	document.getElementById("demo").innerHTML = "Teenager";
+    }
+    
+    else if (x >= 20 && x <= 59) {
+    	document.getElementById("demo").innerHTML = "Adult";
+    }
+    
+    else {
+    	document.getElementById("demo").innerHTML = "???";
+    }
+}
+
+</script>
+
+</body>
+</html>

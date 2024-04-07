@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+</head>
+
+<body>
+<a href="js exercise7.html">Next</a>
+<h1>Grades</h1>
+
+<form>
+
+
+<input type="textbox" id = "gradeInput" value = >
+
+<input type="button" onclick="func()" value = "Submit"> 
+
+
+</form>
+
+<h4>
+
+96 100: Outstanding <br>
+90 95: Cumlaude <br>
+84 89: With Great Honors <br>
+78 83: With Honors <br>
+75 77: Passed <br>
+70 74: Did Not Meet Ecpectations <br>
+69 and Below: Failure <br>
+
+</h4>
+
+<br>
+
+<h1 id="outp"></h1>
+<script>
+
+function func(){
+let grade = document.getElementById("gradeInput").value
+ let result = Number(grade);
+
+if (result >= 96 && result <=100) {
+document.getElementById("outp").innerHTML = "Outstanding";
+}
+else if (result >= 90 && result <=95)
+document.getElementById("outp").innerHTML = "Cumlaude";
+
+else if(result >= 84 && result <=89) {
+document.getElementById("outp").innerHTML = "With Great Honors";
+}
+else if (result >= 78 && result <=83) {
+document.getElementById("outp").innerHTML = "With Honors";
+}
+else if (result >= 75 && result <=77) {
+document.getElementById("outp").innerHTML = "Passed";
+}
+else if (result >= 70 && result <=74) {
+document.getElementById("outp").innerHTML = "Did Not Meet Expectations"
+}
+else if (result <=69) {
+document.getElementById("outp").innerHTML = "Failure";
+}
+else {
+document.getElementById(outp).innerHTML = "Unrecognizable";
+}
+}
+</script>
+</body>
+</html>

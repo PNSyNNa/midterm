@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+</head>
+<body>
+<h1>Positive or Negative/ Odd or even</h1>
+<a href="js exercise8.html">Next</a>
+<form>
+
+<input type="textbox" id = "numInput" value = "">
+<input type="button" onclick="func()" value = "Submit">
+
+</form>
+
+<h1 id="outp"></h1>
+
+<h1 id="outp2"></h1>
+
+<br>
+
+<h1 id="outp"></h1>
+
+<script>
+
+function func(){
+
+let numInput = document.getElementById("numInput").value;
+
+let result = Number(numInput);
+
+if (result % 2 == 0) {
+document.getElementById("outp").innerHTML = "This is an Even Number";
+
+x = Math.sign(result);
+
+if (x == 1){
+
+document.getElementById("outp2").innerHTML = "This is a Positive Number";
+
+}
+
+else if (x == 1){
+
+document.getElementById("outp2").innerHTML = "This is an Negative Number";
+
+}
+else {
+
+document.getElementById("outp2").innerHTML ="Zero"
+}
+}
+else {
+
+document.getElementBvId("outp").innerHTML
+if (result % 2 == 0) {
+
+document.getElementById("outp").innerHTML = "This is an Even Number";
+x = Math.sign(result);
+
+if (x == 1){
+
+document.getElementById("outp2").innerHTML = "This is a Positive Number";
+
+}
+
+else if (x == 1) {
+
+document.getElementById("outp2").innerHTML = "This is an Negative Number";
+
+}
+else {
+
+document.getElementById("outp2").innerHTML ="Zero"
+}
+}
+
+else {
+
+document.getElementById("outp").innerHTML = "This is an odd Number"
+x = Math.sign(result);
+
+if (x == -1){
+
+document.getElementById("outp2").innerHTML = "This is a Positive Number";
+
+}
+
+else if (x == -1)
+
+document.getElementById("outp2").innerHTML = "This is a Negative Number";
+
+
+
+else {
+
+document.getElementById("outp2").innerHTML = "Zero"
+}
+}
+}
+}
+</script>
+ </body>

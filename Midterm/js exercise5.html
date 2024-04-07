@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+</head>
+<body>
+<a href="js exercise6.html">Next</a>
+
+<h1>Age</h1>
+<form>
+<input type="textbox" id = "ageInput" value >
+
+<input type="button" onclick="func()" value = "Submit">
+
+</form>
+<h1 id="outp"></h1>
+<script>
+function func(){
+let age = document.getElementById("ageInput").value;
+
+let result = Number(age);
+if (result >=18){
+document.getElementById("outp").innerHTML = "Eligible to vote.";
+}
+else{
+document.getElementById("outp").innerHTML = "Not Eligable to vote.";
+}
+}
+</script>
+</body>

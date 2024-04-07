@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="js exercise10.html">Next</a>
+<h2>Cube Calculator</h2>
+
+<label for="number">Number Here</label>
+<input type="number" id="number">
+<button onclick="displayCubedResult()">Result</button>
+
+<div id="result"></div>
+
+<script>
+
+function cubeNumber(num) {
+    return num * num * num
+}
+
+function displayCubedResult() {
+    var inputNumber = parseInt(document.getElementById("number").value);
+    var cubedResult = cubeNumber(inputNumber);
+    document.getElementById("result").innerHTML = "The cube Of this Number is:" + inputNumber + +cubedResult;
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
